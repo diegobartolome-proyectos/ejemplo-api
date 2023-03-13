@@ -1,4 +1,4 @@
-# ejemplo-api
+# Ejemplo-api
 Ejemplo de una api de simulacion de hipoteca para un cliente dado un capital, un TAE y un plazo de amortizacion
 ## Empezando
 
