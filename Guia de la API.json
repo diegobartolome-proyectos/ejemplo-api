@@ -1,0 +1,231 @@
+{
+	"info": {
+		"_postman_id": "b178baab-f5c5-4eae-b1d8-b7702a9065f2",
+		"name": "Guia de la API",
+		"description": "Guia de uso de la api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8012/prueba_api/v1/index.php/usuario?dni=09289270f",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8012/prueba_api/v1/index.php/usuario?dni=09289270f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"prueba_api",
+						"v1",
+						"index.php",
+						"usuario"
+					],
+					"query": [
+						{
+							"key": "dni",
+							"value": "09289270f"
+						}
+					]
+				},
+				"description": "Pasando por get el parametro dni obtendremos los datos del usuario con ese dni"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8012/prueba_api/v1/index.php/crear_usuario?nombre=prueba1&apellido1=prueba1_ape1&apellido2=prueba1_ape2&dni=09289270f&email=prueba1@prueba1&capital=20000",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8012/prueba_api/v1/index.php/crear_usuario?nombre=prueba1&apellido1=prueba1_ape1&apellido2=prueba1_ape2&dni=09289270f&email=prueba1@prueba1&capital=20000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"prueba_api",
+						"v1",
+						"index.php",
+						"crear_usuario"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "prueba1"
+						},
+						{
+							"key": "apellido1",
+							"value": "prueba1_ape1"
+						},
+						{
+							"key": "apellido2",
+							"value": "prueba1_ape2"
+						},
+						{
+							"key": "dni",
+							"value": "09289270f"
+						},
+						{
+							"key": "email",
+							"value": "prueba1@prueba1"
+						},
+						{
+							"key": "capital",
+							"value": "20000"
+						}
+					]
+				},
+				"description": "Pasando los parametros nombre, apellido1, apellido2, dni, email y capital por POST se crea un nuevo usuario en bbdd"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8012/prueba_api/v1/index.php/modificar_usuario?nombre=prueba2&apellido1=prueba2_ape1&apellido2=prueba2_ape2&dni=09289270f&email=prueba1@prueba2&capital=50000",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8012/prueba_api/v1/index.php/modificar_usuario?nombre=prueba2&apellido1=prueba2_ape1&apellido2=prueba2_ape2&dni=09289270f&email=prueba1@prueba2&capital=50000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"prueba_api",
+						"v1",
+						"index.php",
+						"modificar_usuario"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "prueba2"
+						},
+						{
+							"key": "apellido1",
+							"value": "prueba2_ape1"
+						},
+						{
+							"key": "apellido2",
+							"value": "prueba2_ape2"
+						},
+						{
+							"key": "dni",
+							"value": "09289270f"
+						},
+						{
+							"key": "email",
+							"value": "prueba1@prueba2"
+						},
+						{
+							"key": "capital",
+							"value": "50000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8012/prueba_api/v1/index.php/usuario?dni=09289270f",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8012/prueba_api/v1/index.php/usuario?dni=09289270f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"prueba_api",
+						"v1",
+						"index.php",
+						"usuario"
+					],
+					"query": [
+						{
+							"key": "dni",
+							"value": "09289270f"
+						}
+					]
+				},
+				"description": "Pasando por delete el parametro dni, la api busca los usuarios con ese dni y en caso de existir lo elimina"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8012/prueba_api/v1/index.php/simulacion_hipoteca?dni=71956526z&tae=6&plazo_amortizacion=5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8012/prueba_api/v1/index.php/simulacion_hipoteca?dni=71956526z&tae=6&plazo_amortizacion=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"prueba_api",
+						"v1",
+						"index.php",
+						"simulacion_hipoteca"
+					],
+					"query": [
+						{
+							"key": "dni",
+							"value": "71956526z"
+						},
+						{
+							"key": "tae",
+							"value": "6"
+						},
+						{
+							"key": "plazo_amortizacion",
+							"value": "5"
+						}
+					]
+				},
+				"description": "Pasando por post los parametros dni, tae y plazo_amortizacion(años) te devuleve la cuota mensual que debe pagar el usuario con ese dni para el capital que tenga guardado y el importe total que debera pagar"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8012/prueba_api/v1/index.php/simulacion_usuario?dni=71956526Z",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8012/prueba_api/v1/index.php/simulacion_usuario?dni=71956526Z",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"prueba_api",
+						"v1",
+						"index.php",
+						"simulacion_usuario"
+					],
+					"query": [
+						{
+							"key": "dni",
+							"value": "71956526Z"
+						}
+					]
+				},
+				"description": "Pasand por get el parametro dni te devuelve las simulaciones realizadas para ese dni"
+			},
+			"response": []
+		}
+	]
+}
